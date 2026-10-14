@@ -2,7 +2,7 @@
 
 CitaRasa Digital memindahkan warung dan rumah makan legendaris ke ponsel pelanggan: menu digital, foto menu, profil peta, dan pesanan WhatsApp. Minta audit menu gratis.
 
-**Demo live:** https://landing-citarasa.vercel.app
+**Demo live:** https://landing-citarasa.pintuweb.id
 
 ![Tangkapan layar CitaRasa Digital](public/og.jpg)
 

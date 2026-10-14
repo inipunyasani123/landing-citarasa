@@ -6,10 +6,10 @@ import "./globals.css";
 const abril = Abril_Fatface({ variable: "--font-abril", subsets: ["latin"], weight: "400" });
 const lora = Lora({ variable: "--font-lora", subsets: ["latin"] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":"CitaRasa Digital","description":"Jasa digitalisasi untuk rumah makan legendaris","url":"https://landing-citarasa.vercel.app"};
+const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":"CitaRasa Digital","description":"Jasa digitalisasi untuk rumah makan legendaris","url":"https://landing-citarasa.pintuweb.id"};
 
 export const metadata = {
-  metadataBase: new URL("https://landing-citarasa.vercel.app"),
+  metadataBase: new URL("https://landing-citarasa.pintuweb.id"),
   title: { default: "CitaRasa Digital — Rumah Makan Lama, Pesanan dari Ponsel", template: "%s — CitaRasa Digital" },
   description: "CitaRasa Digital memindahkan warung dan rumah makan legendaris ke ponsel pelanggan: menu digital, foto menu, profil peta, dan pesanan WhatsApp. Minta audit menu gratis.",
   applicationName: "CitaRasa Digital",
@@ -17,11 +17,11 @@ export const metadata = {
   authors: [{ name: "CitaRasa Digital" }],
   creator: "CitaRasa Digital",
   publisher: "CitaRasa Digital",
-  alternates: { canonical: "https://landing-citarasa.vercel.app" },
+  alternates: { canonical: "https://landing-citarasa.pintuweb.id" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://landing-citarasa.vercel.app",
+    url: "https://landing-citarasa.pintuweb.id",
     siteName: "CitaRasa Digital",
     title: "CitaRasa Digital — Rumah Makan Lama, Pesanan dari Ponsel",
     description: "CitaRasa Digital memindahkan warung dan rumah makan legendaris ke ponsel pelanggan: menu digital, foto menu, profil peta, dan pesanan WhatsApp. Minta audit menu gratis.",

@@ -8,12 +8,14 @@ const lora = Lora({ variable: "--font-lora", subsets: ["latin"] });
 
 const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":"CitaRasa Digital","description":"Jasa digitalisasi untuk rumah makan legendaris","url":"https://landing-citarasa.pintuweb.id"};
 
+const DESKRIPSI = "CitaRasa Digital memindahkan rumah makan legendaris ke ponsel pelanggan: menu digital, foto menu, profil peta, dan pesanan WhatsApp. Audit menu gratis.";
+
 export const metadata = {
   metadataBase: new URL("https://landing-citarasa.pintuweb.id"),
   title: { default: "CitaRasa Digital — Rumah Makan Lama, Pesanan dari Ponsel", template: "%s — CitaRasa Digital" },
-  description: "CitaRasa Digital memindahkan warung dan rumah makan legendaris ke ponsel pelanggan: menu digital, foto menu, profil peta, dan pesanan WhatsApp. Minta audit menu gratis.",
+  description: DESKRIPSI,
   applicationName: "CitaRasa Digital",
-  keywords: ["solusi digital kuliner", "bisnis kuliner", "digitalisasi restoran", "marketing kuliner"],
+  keywords: ["menu digital rumah makan", "foto menu restoran", "profil peta usaha kuliner", "pesanan WhatsApp warung", "digitalisasi rumah makan"],
   authors: [{ name: "CitaRasa Digital" }],
   creator: "CitaRasa Digital",
   publisher: "CitaRasa Digital",
@@ -24,13 +26,13 @@ export const metadata = {
     url: "https://landing-citarasa.pintuweb.id",
     siteName: "CitaRasa Digital",
     title: "CitaRasa Digital — Rumah Makan Lama, Pesanan dari Ponsel",
-    description: "CitaRasa Digital memindahkan warung dan rumah makan legendaris ke ponsel pelanggan: menu digital, foto menu, profil peta, dan pesanan WhatsApp. Minta audit menu gratis.",
+    description: DESKRIPSI,
     images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "CitaRasa Digital — Rumah Makan Lama, Pesanan dari Ponsel" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "CitaRasa Digital — Rumah Makan Lama, Pesanan dari Ponsel",
-    description: "CitaRasa Digital memindahkan warung dan rumah makan legendaris ke ponsel pelanggan: menu digital, foto menu, profil peta, dan pesanan WhatsApp. Minta audit menu gratis.",
+    description: DESKRIPSI,
     images: ["/og.jpg"],
   },
   robots: {

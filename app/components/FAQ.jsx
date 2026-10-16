@@ -2,8 +2,8 @@ import { FAQ as DAFTAR } from '@/lib/citarasa';
 
 export default function FAQ() {
   return (
-    <section className="bg-cream-2 px-6 py-20 md:py-28">
-      <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
+    <section className="bg-cream-2 px-6 py-16 md:py-28">
+      <div className="mx-auto grid max-w-6xl gap-8 md:gap-12 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
         <div>
           <p className="sign-label mb-4 text-enamel">Pertanyaan pemilik</p>
           <h2 className="text-[2rem] leading-[1.1] text-soot md:text-[2.6rem]">Yang biasa ditanyakan sebelum mulai</h2>

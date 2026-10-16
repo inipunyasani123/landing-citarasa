@@ -22,13 +22,13 @@ export default function LeadForm() {
   const input = 'w-full border-2 border-soot/20 bg-cream px-4 py-3 text-soot focus:border-enamel focus:outline-none';
 
   return (
-    <section id="audit" className="scroll-mt-16 bg-cream px-6 py-20 md:py-28">
-      <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+    <section id="audit" className="scroll-mt-16 bg-cream px-6 py-16 md:py-28">
+      <div className="mx-auto grid max-w-6xl gap-8 md:gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
         <div>
           <p className="sign-label mb-4 text-enamel">Audit menu gratis</p>
           <h2 className="text-[2rem] leading-[1.1] text-soot md:text-[2.8rem]">Kirim menu Anda, kami kembalikan satu halaman catatan</h2>
           <p className="mt-5 leading-relaxed">Dalam tiga hari kerja. Tidak ada kewajiban memakai jasa kami setelahnya.</p>
-          <ul className="mt-8 space-y-3">
+          <ul className="mt-6 space-y-2.5 md:mt-8 md:space-y-3">
             {DAPAT.map((d) => (
               <li key={d} className="flex gap-3 text-soot">
                 <span aria-hidden="true" className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-enamel" />
@@ -38,7 +38,7 @@ export default function LeadForm() {
           </ul>
         </div>
 
-        <div className="enamel-frame bg-cream-2 p-7 sm:p-10">
+        <div className="enamel-frame bg-cream-2 p-6 sm:p-10">
           {selesai ? (
             <div role="status" className="py-8">
               <p className="sign-label text-enamel">Tercatat</p>

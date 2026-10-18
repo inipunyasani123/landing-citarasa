@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { KASUS, SITE } from '@/lib/citarasa';
 
@@ -18,13 +19,14 @@ export default function StudiKasus() {
         <ol className="mt-14 space-y-8">
           {KASUS.map((k, i) => (
             <li key={k.slug}>
-              <Link href={`/studi-kasus/${k.slug}`} className={`plate ${i % 2 ? 'plate-mustard' : ''} grid gap-6 px-8 py-10 transition-transform hover:-translate-y-1 sm:px-12 md:grid-cols-[auto_minmax(0,1fr)] md:items-center`}>
+              <Link href={`/studi-kasus/${k.slug}`} className={`plate ${i % 2 ? 'plate-mustard' : ''} grid gap-6 px-8 py-10 transition-transform hover:-translate-y-1 sm:px-12 md:grid-cols-[auto_minmax(0,1fr)_auto] md:items-center`}>
                 <span className="font-[family-name:var(--font-abril)] text-6xl leading-none md:text-7xl">{k.sejak}</span>
                 <span>
                   <span className="sign-label block">{k.kota} · {k.generasi}</span>
                   <span className="mt-2 block font-[family-name:var(--font-abril)] text-3xl">{k.nama}</span>
                   <span className="mt-3 block leading-relaxed">{k.ringkas}</span>
                 </span>
+                <Image src={`/images/kasus/${k.slug}.webp`} alt="" width={160} height={160} className="hidden h-36 w-36 rounded-full object-cover ring-4 ring-soot/20 md:block" />
               </Link>
             </li>
           ))}

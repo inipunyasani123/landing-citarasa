@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { KASUS, SITE, kasusBySlug } from '@/lib/citarasa';
@@ -35,6 +36,30 @@ export default async function Kasus({ params }) {
           </div>
         </div>
       </header>
+
+      <section aria-labelledby="foto" className="px-6 pt-4">
+        <div className="mx-auto max-w-4xl">
+          <h2 id="foto" className="sr-only">Foto menu</h2>
+          {k.foto.lama ? (
+            <div className="grid grid-cols-2 gap-3 sm:gap-6">
+              <figure>
+                <Image src={`/images/kasus/${k.slug}-lama.webp`} alt="Foto yang sama dibuat seperti foto lama di internet: buram, kekuningan, dan silau lampu kilat" width={960} height={720} sizes="(min-width: 960px) 27rem, 46vw" className="aspect-[4/3] h-auto w-full border-4 border-soot/15 object-cover" />
+                <figcaption className="sign-label mt-3 text-soot-soft">Sebelum · foto lama (simulasi)</figcaption>
+              </figure>
+              <figure>
+                <Image src={`/images/kasus/${k.slug}.webp`} alt={k.foto.alt} width={960} height={720} sizes="(min-width: 960px) 27rem, 46vw" className="aspect-[4/3] h-auto w-full border-4 border-mustard object-cover" />
+                <figcaption className="sign-label mt-3 text-enamel">Sesudah · foto ulang</figcaption>
+              </figure>
+              <p className="col-span-2 text-sm leading-relaxed text-soot-soft">{k.foto.ket} Foto “sebelum” dibuat dari foto yang sama untuk menunjukkan masalahnya.</p>
+            </div>
+          ) : (
+            <figure>
+              <Image src={`/images/kasus/${k.slug}.webp`} alt={k.foto.alt} width={960} height={720} sizes="(min-width: 960px) 56rem, 100vw" className="aspect-[16/9] h-auto w-full border-4 border-mustard object-cover" />
+              <figcaption className="mt-3 text-sm leading-relaxed text-soot-soft">{k.foto.ket}</figcaption>
+            </figure>
+          )}
+        </div>
+      </section>
 
       <section className="px-6 py-16">
         <div className="mx-auto grid max-w-4xl gap-12 md:grid-cols-[minmax(0,1.3fr)_minmax(0,0.7fr)]">
@@ -91,9 +116,12 @@ export default async function Kasus({ params }) {
           <ul className="grid gap-6 sm:grid-cols-2">
             {lain.map((x) => (
               <li key={x.slug}>
-                <Link href={`/studi-kasus/${x.slug}`} className="plate plate-mustard block px-7 py-8 hover:-translate-y-1 transition-transform">
-                  <span className="sign-label">Sejak {x.sejak} · {x.kota}</span>
-                  <span className="mt-2 block font-[family-name:var(--font-abril)] text-2xl">{x.nama}</span>
+                <Link href={`/studi-kasus/${x.slug}`} className="plate plate-mustard flex items-center gap-5 px-7 py-8 transition-transform hover:-translate-y-1">
+                  <Image src={`/images/kasus/${x.slug}.webp`} alt="" width={72} height={72} className="h-16 w-16 shrink-0 rounded-full object-cover ring-4 ring-soot/20 sm:h-[4.5rem] sm:w-[4.5rem]" />
+                  <span>
+                    <span className="sign-label">Sejak {x.sejak} · {x.kota}</span>
+                    <span className="mt-2 block font-[family-name:var(--font-abril)] text-2xl">{x.nama}</span>
+                  </span>
                 </Link>
               </li>
             ))}

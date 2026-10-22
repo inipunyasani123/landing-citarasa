@@ -10,6 +10,10 @@ const nextConfig = {
     deviceSizes: [640, 828, 1080, 1280, 1920],
     imageSizes: [64, 128, 256, 384],
   },
+  // Studi kasus "RM Pondok Lombok Ijo" diganti nama fiktif baru (nama lama mirip jaringan rumah makan nyata).
+  async redirects() {
+    return [{ source: '/studi-kasus/pondok-lombok-ijo', destination: '/studi-kasus/hawu-panineungan', permanent: true }];
+  },
   async headers() {
     return [{ source: '/_img/:path*', headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }] }];
   },

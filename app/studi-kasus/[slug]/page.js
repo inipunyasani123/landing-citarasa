@@ -44,7 +44,7 @@ export default async function Kasus({ params }) {
             <div className="grid grid-cols-2 gap-3 sm:gap-6">
               <figure>
                 <Image src={`/images/kasus/${k.slug}-lama.webp`} alt="Foto yang sama dibuat seperti foto lama di internet: buram, kekuningan, dan silau lampu kilat" width={960} height={720} sizes="(min-width: 960px) 27rem, 46vw" className="aspect-[4/3] h-auto w-full border-4 border-soot/15 object-cover" />
-                <figcaption className="sign-label mt-3 text-soot-soft">Sebelum · foto lama (simulasi)</figcaption>
+                <figcaption className="sign-label mt-3 text-soot-soft">Sebelum · foto lama</figcaption>
               </figure>
               <figure>
                 <Image src={`/images/kasus/${k.slug}.webp`} alt={k.foto.alt} width={960} height={720} sizes="(min-width: 960px) 27rem, 46vw" className="aspect-[4/3] h-auto w-full border-4 border-mustard object-cover" />

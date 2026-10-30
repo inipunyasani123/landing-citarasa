@@ -11,7 +11,7 @@ export default function KasusTeaser() {
             <p className="sign-label mb-4 text-mustard">Studi kasus</p>
             <h2 className="text-[2rem] leading-[1.1] text-cream md:text-[2.8rem]">Tiga warung, tiga masalah yang berbeda</h2>
           </div>
-          <Link href="/studi-kasus" className="sign-label shrink-0 border-b-2 border-mustard pb-1 text-mustard hover:text-cream">
+          <Link href="/studi-kasus" className="sign-label inline-flex min-h-11 shrink-0 items-center border-b-2 border-mustard text-mustard hover:text-cream">
             Baca semuanya
           </Link>
         </div>

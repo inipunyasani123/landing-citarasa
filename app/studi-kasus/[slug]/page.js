@@ -28,7 +28,7 @@ export default async function Kasus({ params }) {
     <main className="bg-cream pt-28">
       <header className="paper-texture px-6 pb-16">
         <div className="mx-auto max-w-4xl">
-          <p className="sign-label text-enamel"><Link href="/studi-kasus" className="hover:underline">Studi kasus</Link> · {k.kota}</p>
+          <p className="sign-label text-enamel"><Link href="/studi-kasus" className="inline-block py-3 hover:underline">Studi kasus</Link> · {k.kota}</p>
           <div className="plate mt-6 px-8 py-12 text-center sm:px-14">
             <p className="sign-label text-[#f2c36a]">Sejak {k.sejak}</p>
             <h1 className="mt-3 text-[2.4rem] leading-[1.05] text-cream md:text-6xl">{k.nama}</h1>

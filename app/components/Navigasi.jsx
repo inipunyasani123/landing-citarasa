@@ -44,7 +44,7 @@ export default function Navigasi({ children }) {
     <>
       <nav aria-label="Navigasi utama" className="hidden items-center gap-8 md:flex">
         {NAV.map(([href, label]) => (
-          <Link key={href} href={href} aria-current={aktif(href)} className="sign-label text-soot-soft transition-colors hover:text-enamel aria-[current=page]:text-enamel">
+          <Link key={href} href={href} aria-current={aktif(href)} className="sign-label inline-flex min-h-11 items-center text-soot-soft transition-colors hover:text-enamel aria-[current=page]:text-enamel">
             {label}
           </Link>
         ))}
@@ -57,7 +57,7 @@ export default function Navigasi({ children }) {
           aria-expanded={buka}
           aria-controls="menu-ponsel"
           onClick={() => setBuka((b) => !b)}
-          className="sign-label inline-flex h-10 min-w-[4.75rem] items-center justify-center border-2 border-soot/25 px-3 text-soot md:hidden"
+          className="sign-label inline-flex h-11 min-w-[4.75rem] items-center justify-center border-2 border-soot/25 px-3 text-soot md:hidden"
         >
           {buka ? 'Tutup' : 'Menu'}
         </button>

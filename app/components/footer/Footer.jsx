@@ -13,18 +13,18 @@ export default function Footer() {
         </div>
         <nav aria-label="Studi kasus">
           <p className="sign-label mb-4 text-mustard">Studi kasus</p>
-          <ul className="space-y-2.5 text-sm text-cream/80">
+          <ul className="space-y-0.5 text-sm text-cream/80">
             {KASUS.map((k) => (
-              <li key={k.slug}><Link href={`/studi-kasus/${k.slug}`} className="hover:text-cream">{k.nama}</Link></li>
+              <li key={k.slug}><Link href={`/studi-kasus/${k.slug}`} className="inline-block py-3 hover:text-cream">{k.nama}</Link></li>
             ))}
           </ul>
         </nav>
         <nav aria-label="Halaman">
           <p className="sign-label mb-4 text-mustard">Halaman</p>
-          <ul className="space-y-2.5 text-sm text-cream/80">
-            <li><Link href="/#layanan" className="hover:text-cream">Layanan</Link></li>
-            <li><Link href="/#proses" className="hover:text-cream">Proses</Link></li>
-            <li><Link href="/#audit" className="hover:text-cream">Audit menu gratis</Link></li>
+          <ul className="space-y-0.5 text-sm text-cream/80">
+            <li><Link href="/#layanan" className="inline-block py-3 hover:text-cream">Layanan</Link></li>
+            <li><Link href="/#proses" className="inline-block py-3 hover:text-cream">Proses</Link></li>
+            <li><Link href="/#audit" className="inline-block py-3 hover:text-cream">Audit menu gratis</Link></li>
           </ul>
         </nav>
       </div>
